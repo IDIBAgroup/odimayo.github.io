@@ -1468,7 +1468,7 @@ div#mCSB_1_container{
 .header-top .top-inner:before{
   position: absolute;
   content: '';
-  background: #0f4762;
+  background: rgba(0, 0, 0, 0.4);
   height: 100%;
   left: 0px;
   top: 0px;
@@ -2224,6 +2224,9 @@ div#mCSB_1_container{
   background: #fff;
   height: 100%;
 }
+.services .box-shaw{
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.15);
+}
 
 .services .service-item .icon {
   width: 48px;
@@ -2233,7 +2236,7 @@ div#mCSB_1_container{
 }
 
 .services .service-item .icon i {
-  color: var(--color-secondary);
+  color: #0f4762;
   font-size: 40px;
   transition: ease-in-out 0.3s;
   z-index: 2;
@@ -2255,7 +2258,7 @@ div#mCSB_1_container{
 }
 
 .services .service-item h3 {
-  color:  #364d59;
+  color: #0f4762;
   font-weight: 700;
   margin: 0 0 10px 0;
   padding-bottom: 8px;
