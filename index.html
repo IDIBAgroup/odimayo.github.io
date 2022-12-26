@@ -16,6 +16,7 @@
 <link href="assets/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
 <link href="assets/css/jquery.fancybox.min.css" rel="stylesheet">
 <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/global.css">
 <link href="assets/css/animate.css" rel="stylesheet">
 <link href="assets/css/color.css" rel="stylesheet">
 <link href="assets/css/elpath.css" rel="stylesheet">
@@ -35,7 +36,7 @@
               <div class="top-inner clearfix">
                   <div class="left-column pull-left">
                       <ul class="info-list clearfix">
-                          <li><i class="fa-sharp fa-solid fa-house" style="color:#feb900"></i><a href="index.html" style="color:#feb900">ODIMAYO ILEMOBAYO</a></li>
+                          <li><i class="fa-sharp fa-solid fa-house" style="color:#feb900"></i><a href="#" style="color:#feb900">ODIMAYO ILEMOBAYO</a></li>
                           <li><i class="fas fa-phone-square"></i><a href="tel:+971 04 234 7713">+971 04 234 7713</a></li>
                       </ul>
                   </div>
@@ -54,7 +55,7 @@
                 <div class="header-lower">
                     <div class="outer-box clearfix">
                         <div class="logo-box">
-                            <figure class="logo"><a href="index.html"><img src="assets/images/logo.png" alt=""></a></figure>
+                            <figure class="logo"><a href="#"><img src="assets/images/logo.png" alt=""></a></figure>
                         </div>
                         <div class="menu-area clearfix">
                             <!--Mobile Navigation Toggler-->
@@ -66,7 +67,7 @@
                             <nav class="main-menu navbar-expand-md navbar-light">
                                 <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                                     <ul class="navigation clearfix">
-                                        <li class="current dropdown"><a href="index.html">Home</a></li>
+                                        <li class="current dropdown"><a href="#banner-section">Home</a></li>
                                         <li class="dropdown"><a href="#about">About</a></li> 
                                         <li class="dropdown"><a href="#services">Services</a></li> 
                                         <li class="dropdown"><a href="#team-section">Team</a></li> 
@@ -126,7 +127,7 @@
         </div><!-- End Mobile Menu -->
 
          <!-- banner-section -->
-         <section class="banner-section left p_relative" style="padding:0;">
+         <section class="banner-section left p_relative pt_0 pb_0" id="banner-section">
             <div class="banner-carousel owl-theme owl-carousel owl-dots-none">
                 <div class="slide-item p_relative pt_190 pb_220">
                     <div class="image-layer p_absolute" style="background-image:url(assets/images/banner/banner-1.jpg)"></div>
@@ -170,17 +171,17 @@
   <!-- about-section -->
   <section class="about-section p_relative" id="about">
     <div class="auto-container">
-      <div class="section-header">
-        <h2>About</h2>
-      </div>
-
+     
         <div class="row clearfix">
-            <div class="col-lg-6 col-md-12 col-sm-12 content-column">
+            <div class="col-lg-7 col-md-12 col-sm-12 content-column">
                 <div class="content_block_1">
-                    <div class="content-box p_relative d_block mr_70 pb_90">
+                    <div class="content-box p_relative d_block mr_70">
+                        <div class="section-header">
+                            <h2>About</h2>
+                          </div>
                         <div class="sec-title p_relative d_block mb_20">
                             <span class="p_relative d_block fs_14 lh_20 fw_sbold theme-color">Get to know us</span>
-                            <h2 class="p_relative d_block lh_45 fw_exbold">ODIMAYO ILEMOBAYO For Project Management Services CO</h2>
+                            <h2 class="p_relative d_block lh_38 fw_exbold">ODIMAYO ILEMOBAYO For Project Management Services CO</h2>
                         </div>
                         <div class="text p_relative d_block mb_30">
                             <p>ODIMAYO ILEMOBAYO surveille, conseille et contrôle chaque partie prenante de tout projet dans les trois éléments de qualité, de valeur et de temps pour garantir à nos clients les meilleurs résultats. Nous facilitons une approche mesurée et holistique de la mise en œuvre du projet en mettant l'accent sur la coopération et le travail d'équipe...  <a href="about.html" class="lire-plus stretched-link">Lire Plus <i class="bi bi-arrow-right"></i></a></p>
@@ -196,10 +197,10 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 col-md-12 col-sm-12 image-column">
+            <div class="col-lg-5 col-md-12 col-sm-15 image-column">
                 <div class="image_block_1">
                     <div class="image-box p_relative d_block pl_70">
-                        <figure class="image p_relative d_block image-1 b_radius_10 tran_5"><img src="assets/images/resource/about-1.jpg" alt=""></figure>
+                        <figure class="image p_relative d_iblock tran_5"><img src="assets/images/resource/about-1.jpg" alt=""></figure>
                         <figure class="image image-2 p_absolute r_120 b_radius_10 wow slideInRight animated" data-wow-delay="00ms" data-wow-duration="1500ms"><img src="assets/images/resource/about-2.jpg" alt=""></figure>
                         <div class="text p_absolute t_160 b_radius_10 b_shadow_7 bg-white pt_35 pr_40 pb_35 pl_110">
                             <div class="icon-box p_absolute l_30 t_30 fs_65 theme-color"><i class="flaticon-customer-service"></i></div>
@@ -214,9 +215,9 @@
 <!-- about-section end -->
 
    <!-- ======= Services Section ======= -->
-   <section id="services" class="services">
+   <section id="services" class="services pb_0">
     <div class="container" data-aos="fade-up">
-      <div class="section-header">
+      <div class="section-header pb_20">
         <h2>Services</h2>
       </div>
       <div class="row gy-4">
@@ -257,7 +258,7 @@
     </div>
   </section><!-- End Services Section -->
     <!-- ======= Alt Services Section ======= -->
-  <section id="alt-services" class="alt-services" style="padding: 0;">
+  <section id="alt-services" class="alt-services pb_0 pt_0">
     <div class="container" data-aos="fade-up">
 
       <div class="row justify-content-around gy-4">
