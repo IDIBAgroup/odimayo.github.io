@@ -11,19 +11,6 @@
 		});
 	  }
 	
-	//Hide Loading Box (Preloader)
-	function handlePreloader() {
-		if($('.loader-wrap').length){
-			$('.loader-wrap').delay(1000).fadeOut(500);
-		}
-	}
-
-	if ($(".preloader-close").length) {
-        $(".preloader-close").on("click", function(){
-            $('.loader-wrap').delay(200).fadeOut(500);
-        })
-    }
-
 	/**
    * Init swiper slider with 1 slide at once in desktop view
    */
