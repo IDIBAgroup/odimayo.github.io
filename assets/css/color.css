@@ -37,9 +37,9 @@
   color:#feb900;
 }
 
-.main-menu .navigation > li > a:before{
+/* .main-menu .navigation > li > a:before{
 	background: #feb900;
-}
+} */
 
 .main-header .search-box-btn:hover{
 	color: #feb900 !important;
