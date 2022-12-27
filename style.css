@@ -653,128 +653,85 @@
 /* --------------------------------------------------------------
 Start Team Section
 ----------------------------------------------------------- */
-/** team-section **/
-
-.team-block-one .inner-box .designation{
-  text-transform: uppercase;
-}
-
-.team-block-one .inner-box .social-links li{
+/*--------------------------------------------------------------
+# Our Team Section
+--------------------------------------------------------------*/
+.team .member {
   position: relative;
-  display: inline-block;
-  margin: 0px 3.5px;
 }
 
-.team-block-one .inner-box .social-links li a{
-  display: inline-block;
-  width: 46px;
-  height: 46px;
-  line-height: 46px;
-  color: #73727c;
-  font-size: 14px;
-  background: #f1f0f7;
-  text-align: center;
+.team .member .member-img {
+  margin: 0 80px;
   border-radius: 50%;
-}
-
-.team-block-one .inner-box .social-links li a:hover{
-  color: #fff;
-}
-
-.team-block-one .inner-box .overlay-content{
-  position: absolute;
-  left: 0px;
-  bottom: -30px;
-  width: 100%;
-  opacity: 0;
-  visibility: hidden;
-}
-
-.team-block-one .inner-box:hover .overlay-content{
-  bottom: 0px;
-  opacity: 1;
-  visibility: visible;
-}
-
-.team-section .owl-carousel .owl-stage-outer{
-  overflow: visible;
-}
-
-.team-section .owl-item{
-  opacity: 0;
-}
-
-.team-section .owl-item.active{
-  opacity: 1;
-}
-
-.team-section .inner-content{
-  margin-right: -400px;
-}
-
-.team-block-one .inner-box .image-box{
   overflow: hidden;
-  border-radius: 10px;
+  position: relative;
 }
 
-.team-block-one .inner-box .image-box:before{
-  position: absolute;
-  content: '';
-  background: #1b182f;
-  width: 100%;
-  height: 100%;
-  left: 0px;
-  top: 0px;
-  right: 0px;
-  transform: scale(0);
-  opacity: 0.7;
+@media (max-width: 1024px) {
+  .team .member .member-img {
+    margin: 0 60px;
+  }
+}
+
+.team .member .member-img img {
+  position: relative;
   z-index: 1;
-  transition: all 500ms ease;
 }
 
-.team-block-one .inner-box:hover .image-box:before{
-  transform: scale(1);
-}
-
-.team-block-one .inner-box .image-box img{
-  width: 100%;
-  transition: all 500ms ease;
-}
-
-.team-block-one .inner-box:hover .image-box img{
-  transform: scale(1.05);
-}
-
-.team-section .owl-dots{
+.team .member .member-img .social {
   position: absolute;
-  top: -120px;
-  left: 0px;
-  width: 1170px;
-  text-align: right;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  padding-bottom: 20px;
+  transition: 0.3s;
+  visibility: hidden;
+  opacity: 0;
 }
 
-.team-section .owl-theme .owl-dots .owl-dot span{
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: rgba(0, 0, 0, 0.30);
-  transition: all 500ms ease;
+.team .member .member-img .social a {
+  transition: 0.3s;
+  color: #fff;
+  font-size: 20px;
+  margin: 0 8px;
 }
 
-.team-section .owl-theme .owl-dots .owl-dot.active span,
-.team-section .owl-theme .owl-dots .owl-dot span:hover{
-  transform: scale(1.5);
-  background: #000;
+.team .member .member-img .social a:hover {
+  color: var(--color-primary);
 }
 
-.team-block-one .inner-box{
-  padding-bottom: 25px;
+.team .member .member-info {
+  margin-top: 30px;
 }
 
-/* --------------------------------------------------------------
-End Team Section
------------------------------------------------------------ */
+.team .member .member-info h4 {
+  font-weight: 700;
+  margin-bottom: 6px;
+  font-size: 18px;
+  color: var(--color-secondary);
+}
 
+.team .member .member-info span {
+  font-style: italic;
+  display: block;
+  font-size: 15px;
+  color: #838893;
+  margin-bottom: 10px;
+}
+
+.team .member .member-info p {
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+.team .member:hover .member-img .social {
+  padding-bottom: 0;
+  visibility: visible;
+  opacity: 1;
+}
 
 /* --------------------------------------------------------------
 Start Form Section
