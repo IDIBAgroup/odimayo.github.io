@@ -584,7 +584,7 @@
 		handlePreloader();
 		enableMasonry();
 	});
-
+	var rellax = new Rellax('.topmouv')
 	
 
 })(window.jQuery);
