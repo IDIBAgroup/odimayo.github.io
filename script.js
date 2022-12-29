@@ -282,7 +282,7 @@
     		active: true,
 			smartSpeed: 1000,
 			autoplay: 6000,
-            navText: [ '<span class="fal fa-long-arrow-left"></span>', '<span class="fal fa-long-arrow-right"></span>' ],
+            navText: [ '<span class="fa-solid fa-arrow-left"></span>', '<span class="fas fa-solid fa-arrow-right"></span>' ],
             responsive:{
                 0:{
                     items:1
@@ -309,7 +309,7 @@
 			nav:true,
 			smartSpeed: 500,
 			autoplay: 1000,
-			navText: [ '<span class="far fa-long-arrow-left"></span>', '<span class="far fa-long-arrow-right"></span>' ],
+			navText: [ '<span class="fa-solid fa-arrow-left"></span>', '<span class="fas fa-solid fa-arrow-right"></span>' ],
 			responsive:{
 				0:{
 					items:1
@@ -340,7 +340,7 @@
 			nav:true,
 			smartSpeed: 500,
 			autoplay: 1000,
-			navText: [ '<span class="far fa-long-arrow-left"></span>', '<span class="far fa-long-arrow-right"></span>' ],
+			navText: [ '<span class="fa-solid fa-arrow-left"></span>', '<span class="fas fa-solid fa-arrow-right"></span>' ],
 			responsive:{
 				0:{
 					items:1
@@ -370,7 +370,7 @@
 			nav:true,
 			smartSpeed: 500,
 			autoplay: 1000,
-			navText: [ '<span class="fas fa-angle-left"></span>', '<span class="fas fa-angle-right"></span>' ],
+			navText: [ '<span class="fa-solid fa-arrow-left"></span>', '<span class="fas fa-solid fa-arrow-right"></span>' ],
 			responsive:{
 				0:{
 					items:1
@@ -400,7 +400,7 @@
 			nav:true,
 			smartSpeed: 500,
 			autoplay: 1000,
-			navText: [ '<span class="fas fa-angle-left"></span>', '<span class="fas fa-angle-right"></span>' ],
+			navText: [ '<span class="fa-solid fa-arrow-left"></span>', '<span class="fas fa-solid fa-arrow-right"></span>' ],
 			responsive:{
 				0:{
 					items:1
@@ -430,7 +430,7 @@
 			nav:true,
 			smartSpeed: 500,
 			autoplay: 1000,
-			navText: [ '<span class="fas fa-angle-left"></span>', '<span class="fas fa-angle-right"></span>' ],
+			navText: [ '<span class="fa-solid fa-arrow-left"></span>', '<span class="fas fa-solid fa-arrow-right"></span>' ],
 			responsive:{
 				0:{
 					items:1
@@ -579,12 +579,57 @@
 	/* ==========================================================================
    When document is loaded, do
    ========================================================================== */
-	
-	$(window).on('load', function() {
-		handlePreloader();
-		enableMasonry();
-	});
-	var rellax = new Rellax('.topmouv')
-	
+   $(window).on('load', function() {
+	handlePreloader();
+	enableMasonry();
+});
+
+  /**
+   * Animation on scroll function and init
+   */
+  function aos_init() {
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true,
+      mirror: false
+    });
+  }
+  window.addEventListener('load', () => {
+    aos_init();
+  });
+  /**
+  * Init swiper slider with 3 slides at once in desktop view
+  */
+ new Swiper('.slides-3', {
+   speed: 600,
+   loop: true,
+   autoplay: {
+	 delay: 5000,
+	 disableOnInteraction: false
+   },
+   slidesPerView: 'auto',
+   pagination: {
+	 el: '.swiper-pagination',
+	 type: 'bullets',
+	 clickable: true
+   },
+   navigation: {
+	 nextEl: '.swiper-button-next',
+	 prevEl: '.swiper-button-prev',
+   },
+   breakpoints: {
+	 320: {
+	   slidesPerView: 1,
+	   spaceBetween: 40
+	 },
+
+	 1200: {
+	   slidesPerView: 3,
+	 }
+   }
+ });
+
+
 
 })(window.jQuery);
